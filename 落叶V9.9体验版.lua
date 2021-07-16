@@ -1,116 +1,116 @@
 -----------------------------------------------------------------------------------------------------------
---    ×¢Òâ£¬½Å±¾ÄÚµÄËùÓĞ×¢Ã÷¶¼½ûÖ¹É¾³ıºÍĞŞ¸Ä£¬1¡¢¹¦ÄÜ¿ª¹Ø¿ÉÒÔĞŞ¸Ä£»  2¡¢Êó±ê²à¼ü¿ÉÒÔÉèÖÃ ÆäËûµÄÒ»ÂÉ½ûÖ¹ĞŞ¸Ä           --	
+--    æ³¨æ„ï¼Œè„šæœ¬å†…çš„æ‰€æœ‰æ³¨æ˜éƒ½ç¦æ­¢åˆ é™¤å’Œä¿®æ”¹ï¼Œ1ã€åŠŸèƒ½å¼€å…³å¯ä»¥ä¿®æ”¹ï¼›  2ã€é¼ æ ‡ä¾§é”®å¯ä»¥è®¾ç½® å…¶ä»–çš„ä¸€å¾‹ç¦æ­¢ä¿®æ”¹           --	
 -----------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------
---                                        ÃÜÔ¿ÊÚÈ¨ÑéÖ¤                                                    --	
+--                                        å¯†é’¥æˆæƒéªŒè¯                                                    --	
 -----------------------------------------------------------------------------------------------------------
- QQqun1 = "QQÈº:903110409" 		--{ QQÈºÑéÖ¤£¬±ğĞŞ¸Ä£¬»áµ¼ÖÂµçÄÔ±ÀÀ£ËÀ»ú£©
- QQqun2 = "QQÈº:610317275" 		--{ QQÈºÑéÖ¤£¬±ğĞŞ¸Ä£¬»áµ¼ÖÂµçÄÔ±ÀÀ£ËÀ»ú£©
+QQqun1 = "QQç¾¤:903110409" 		--{ QQç¾¤éªŒè¯ï¼Œåˆ«ä¿®æ”¹ï¼Œä¼šå¯¼è‡´ç”µè„‘å´©æºƒæ­»æœºï¼‰
+QQqun2 = "QQç¾¤:610317275" 		--{ QQç¾¤éªŒè¯ï¼Œåˆ«ä¿®æ”¹ï¼Œä¼šå¯¼è‡´ç”µè„‘å´©æºƒæ­»æœºï¼‰
 
- GameFPS = "90"	BanBen = "9.9"   Sq = "9.99"   ZG = "1.01"  LY = "QQ:997788733_LuoYe" 
+GameFPS = "90"	BanBen = "9.9"   Sq = "9.99"   ZG = "1.01"  LY = "QQ:997788733_LuoYe" 
 
 --------------------------------------------------------------------------
-----------------        ÂŞ¼¼GÏµÁĞÊó±ê²à¼ü     ------------------------------
+----------------        ç½—æŠ€Gç³»åˆ—é¼ æ ‡ä¾§é”®     ------------------------------
 --------------------------------------------------------------------------
--- Èç¹ûÄãÊÇG-HUBÂŞ¼¼Çı¶¯£¬²»ÒªÂÒ¸ÄÎ»ÖÃºÍ²à¼ü±àºÅ£¬»áµ¼ÖÂÊ§Áé
-    m416_cdk_luoye = 5
-    ump9_cdk_luoye = 7 
-    pp19_cdk_luoye = 9
-      gb_cdk_luoye = 6 -- ¹Ø±ÕËùÓĞÑ¹Ç¹	 
-liandian2_liandian = 0 -- Ö§³ÖM16¡¢SKS¡¢SLR¡¢MINIÁ¬µã¹¦ÄÜ£¨¼æÈİÄ£Ê½£¬Å¼È»»á³öÏÖ¿¨Ö÷£¬Ö§³ÖG-HUBÊ¹ÓÃ£¬Ğ¡·ù¶ÈĞ­ÖúÑ¹Ç¹£©
+-- å¦‚æœä½ æ˜¯G-HUBç½—æŠ€é©±åŠ¨ï¼Œä¸è¦ä¹±æ”¹ä½ç½®å’Œä¾§é”®ç¼–å·ï¼Œä¼šå¯¼è‡´å¤±çµ
+   m416_cdk_luoye = 5
+   ump9_cdk_luoye = 7 
+   pp19_cdk_luoye = 9
+     gb_cdk_luoye = 6 -- å…³é—­æ‰€æœ‰å‹æª	 
+liandian2_liandian = 0 -- æ”¯æŒM16ã€SKSã€SLRã€MINIè¿ç‚¹åŠŸèƒ½ï¼ˆå…¼å®¹æ¨¡å¼ï¼Œå¶ç„¶ä¼šå‡ºç°å¡ä¸»ï¼Œæ”¯æŒG-HUBä½¿ç”¨ï¼Œå°å¹…åº¦ååŠ©å‹æªï¼‰
 --------------------------------------------------------------------------
-----------------    µÚ¶ş×é²à¼ü£¨CTRL+Êó±ê²à¼ü£©------------------------------
+----------------    ç¬¬äºŒç»„ä¾§é”®ï¼ˆCTRL+é¼ æ ‡ä¾§é”®ï¼‰------------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-----------------           Ìò×°±¸°´¼üÉèÖÃ     ------------------------------
+----------------           èˆ”è£…å¤‡æŒ‰é”®è®¾ç½®     ------------------------------
 --------------------------------------------------------------------------	
--- Èç¹ûÄã²»ÖªµÀÄãµ±Ç°µÄ²à¼ü,°ÑCeJian ÉèÖÃÎª CeJian= true ºóÄãÔÙ°´Ò»ÏÂÄãµÄÊó±ê²à¼ü¾Í¿ÉÒÔ¿´µ½µ±Ç°µÄ²à¼ü±àºÅÊÇ¶àÉÙÁË£¬Òª¼ÇµÃºóÃæ¹Øµô£¬ÃâµÃµ½Ê±ºò¿¨Å¶£»
+-- å¦‚æœä½ ä¸çŸ¥é“ä½ å½“å‰çš„ä¾§é”®,æŠŠCeJian è®¾ç½®ä¸º CeJian= true åä½ å†æŒ‰ä¸€ä¸‹ä½ çš„é¼ æ ‡ä¾§é”®å°±å¯ä»¥çœ‹åˆ°å½“å‰çš„ä¾§é”®ç¼–å·æ˜¯å¤šå°‘äº†ï¼Œè¦è®°å¾—åé¢å…³æ‰ï¼Œå…å¾—åˆ°æ—¶å€™å¡å“¦ï¼›
 CeJian = false
--- ÊÇ·ñ¿ªÆô¿ìËÙ¿ª¾µ£¬×ó¼üÌò°ü²»ÏÂÑ¹£¨Ñ¹Ç¹·½Ê½:ÏÈ°´×¡Êó±êÓÒ¼üÔÙ°´×ó¼ü£©
+-- æ˜¯å¦å¼€å¯å¿«é€Ÿå¼€é•œï¼Œå·¦é”®èˆ”åŒ…ä¸ä¸‹å‹ï¼ˆå‹æªæ–¹å¼:å…ˆæŒ‰ä½é¼ æ ‡å³é”®å†æŒ‰å·¦é”®ï¼‰
 quickfire = false 
--- Í¬Ò»¸ö²à¼ü°´µÚ¶ş´Î¹Ø±Õºê
+-- åŒä¸€ä¸ªä¾§é”®æŒ‰ç¬¬äºŒæ¬¡å…³é—­å®
 drcgb = false		
--- ÂúÅäÄ£Ê½¿ª¹Ø°¡(²»ĞèÒªÂúÅäÄ£Ê½¾ÍÉèÖÃÎª false )
+-- æ»¡é…æ¨¡å¼å¼€å…³å•Š(ä¸éœ€è¦æ»¡é…æ¨¡å¼å°±è®¾ç½®ä¸º false )
 full_mode = true
--- ËÄ±¶Ä£Ê½¿ª¹Ø°¡(²»ĞèÒªËÄ±¶Ä£Ê½¾ÍÉèÖÃÎª false )
+-- å››å€æ¨¡å¼å¼€å…³å•Š(ä¸éœ€è¦å››å€æ¨¡å¼å°±è®¾ç½®ä¸º false )
 mode4X_nf = true
--- ÆÁÏ¢Ä£Ê½¿ª¹Ø°¡(²»ĞèÒªÆÁÏ¢Ä£Ê½¾ÍÉèÖÃÎª false )
+-- å±æ¯æ¨¡å¼å¼€å…³å•Š(ä¸éœ€è¦å±æ¯æ¨¡å¼å°±è®¾ç½®ä¸º false )
 hold_breath_mode = true
--- ×Ô¶¯»»µ°£¨Á¬Ğø´òÍê40·¢×Óµ¯×Ô¶¯»»×Óµ¯µÄ£©
+-- è‡ªåŠ¨æ¢è›‹ï¼ˆè¿ç»­æ‰“å®Œ40å‘å­å¼¹è‡ªåŠ¨æ¢å­å¼¹çš„ï¼‰
 auto_reloading = true
 --------------------------------------------------------------------------
-----------------           ÈÈ¼üÇø¼üÅÌÉèÖÃ     ------------------------------
+----------------           çƒ­é”®åŒºé”®ç›˜è®¾ç½®     ------------------------------
 --------------------------------------------------------------------------
--- ÇĞ»»µÚ¶ş×éÊó±ê²à¼üÊ±,°´×¡¼üÅÌ×óÏÂ½ÇµÄ Ctrl¼ü+Êó±ê²à¼ü
+-- åˆ‡æ¢ç¬¬äºŒç»„é¼ æ ‡ä¾§é”®æ—¶,æŒ‰ä½é”®ç›˜å·¦ä¸‹è§’çš„ Ctrlé”®+é¼ æ ‡ä¾§é”®
 control_key = "lctrl" 
--- °´×¡´Ë¼ü¿ÉÒÔÁÙÊ±¹Ø±Õ×ó¼üÑ¹Ç¹£¬ËÉ¿ª»Ö¸´Ñ¹Ç¹
+-- æŒ‰ä½æ­¤é”®å¯ä»¥ä¸´æ—¶å…³é—­å·¦é”®å‹æªï¼Œæ¾å¼€æ¢å¤å‹æª
 ignore_key = "lalt" 
--- ÆÁÏ¢Ê±Òª°´×¡×óÏÂ½Ç¼üÅÌµÄ Shift ¼üÅÌ
+-- å±æ¯æ—¶è¦æŒ‰ä½å·¦ä¸‹è§’é”®ç›˜çš„ Shift é”®ç›˜
 hold_breath_key = "lshift"
--- ¶×ÏÂÊ±Òª°´×¡×óÏÂ½Ç¼üÅÌµÄ Ctrl ¼üÅÌ
+-- è¹²ä¸‹æ—¶è¦æŒ‰ä½å·¦ä¸‹è§’é”®ç›˜çš„ Ctrl é”®ç›˜
 hold_dsquat_key = "lctrl"
--- ¼çÉä¹¦ÄÜ¿ª¹Ø(°´×¡Êó±êÓÒ¼ü¿É½«ËÄ±¶Ä£Ê½ÁÙÊ±ÇĞ»»³ÉºìµãÄ£Ê½)
+-- è‚©å°„åŠŸèƒ½å¼€å…³(æŒ‰ä½é¼ æ ‡å³é”®å¯å°†å››å€æ¨¡å¼ä¸´æ—¶åˆ‡æ¢æˆçº¢ç‚¹æ¨¡å¼)
 Shouldershot = true		
--- ¿ÕÅäÄ£Ê½ÓëÂúÅäÄ£Ê½¿ªÆôµÆ¹â·´×ª£¨false =  µÆÁÁ¿ÕÅä  ¸ÄÎª true = µÆÁÁÎªÂúÅä£©
+-- ç©ºé…æ¨¡å¼ä¸æ»¡é…æ¨¡å¼å¼€å¯ç¯å…‰åè½¬ï¼ˆfalse =  ç¯äº®ç©ºé…  æ”¹ä¸º true = ç¯äº®ä¸ºæ»¡é…ï¼‰
 fz_mode = false
 --------------------------------------------------------------------------
-----------------           ¼üÅÌµÄÖ¸Ê¾µÆ°´¼üÉèÖÃ     -------------------------
+----------------           é”®ç›˜çš„æŒ‡ç¤ºç¯æŒ‰é”®è®¾ç½®     -------------------------
 --------------------------------------------------------------------------
--- ¿ªÆô/¹Ø±ÕÂúÅäµÄ¼üÅÌ°´Å¥ 
+-- å¼€å¯/å…³é—­æ»¡é…çš„é”®ç›˜æŒ‰é’® 
 full_mode_key = "Numlock"   
--- ¿ªÆô/¹Ø±Õ4±¶µÄ¼üÅÌ°´Å¥
+-- å¼€å¯/å…³é—­4å€çš„é”®ç›˜æŒ‰é’®
 mode_switch_key = "Capslock" 
--- Õâ¸öÊÇ¼üÅÌÖ¸Ê¾µÆ,Õ¹Ê¾ºêÊÇ·ñ¿ªÆô£¨µÆÁÁÊÇºêÒÑ¾­¿ªÆô£¬Ãğ¾ÍÊÇÃ»¿ªÆô£©
+-- è¿™ä¸ªæ˜¯é”®ç›˜æŒ‡ç¤ºç¯,å±•ç¤ºå®æ˜¯å¦å¼€å¯ï¼ˆç¯äº®æ˜¯å®å·²ç»å¼€å¯ï¼Œç­å°±æ˜¯æ²¡å¼€å¯ï¼‰
 lighton_key = "Scrolllock" 
 --------------------------------------------------------------------------
-----------------          ÎäÆ÷ÏµÊıÇ¿¶Èµ÷½Ú    ------------------------------
+----------------          æ­¦å™¨ç³»æ•°å¼ºåº¦è°ƒèŠ‚    ------------------------------
 --------------------------------------------------------------------------
---{ µ±Ç°Ä¬ÈÏµÄÊÇ1920,Èç¹ûÄãÊÇ2KÆÁ£¬¿ÉÒÔ³¢ÊÔ°Ñping = "2560",Èç¹ûÃ»ÓĞ1920µÄÎÈ£¬ÄÇ¾Í¸Ä»ØÀ´
+--{ å½“å‰é»˜è®¤çš„æ˜¯1920,å¦‚æœä½ æ˜¯2Kå±ï¼Œå¯ä»¥å°è¯•æŠŠping = "2560",å¦‚æœæ²¡æœ‰1920çš„ç¨³ï¼Œé‚£å°±æ”¹å›æ¥
 Ping = "1920" 
---{ 1920x1080µÄ×ÜÏµÊı(Èç¹ûÄã½«Ping = "1920"ÁË£¬ĞŞ¸ÄÕâ¸ö1x1920µÄÕâ¸ö×ÜÏµÊı)
+--{ 1920x1080çš„æ€»ç³»æ•°(å¦‚æœä½ å°†Ping = "1920"äº†ï¼Œä¿®æ”¹è¿™ä¸ª1x1920çš„è¿™ä¸ªæ€»ç³»æ•°)
 lx1920 = 1
---{ 2560x1440µÄ×ÜÏµÊı(Èç¹ûÄã½«Ping = "2560"ÁË£¬ĞŞ¸ÄÕâ¸ö1x2560µÄÕâ¸ö×ÜÏµÊı)
+--{ 2560x1440çš„æ€»ç³»æ•°(å¦‚æœä½ å°†Ping = "2560"äº†ï¼Œä¿®æ”¹è¿™ä¸ª1x2560çš„è¿™ä¸ªæ€»ç³»æ•°)
 lx2560 = 1
 --------------------------------------------------------------------------
------ Õ¾¡¢ÆÁÏ¢Ñ¹²»×¡£¬Çë°ÑÏµÊıÇ¿¶È¸Ä´ó£¬Ñ¹¹ıÍ·µÄ»°¾Í¸ÄĞ¡	------------------------
------ ¶×¡¢Ñ¹²»×¡£¬Çë°ÑÏµÊıÇ¿¶È ¸ÄĞ¡ £¬Ñ¹¹ıÍ·µÄ»°¾Í ¸Ä´ó 	------------------------
+----- ç«™ã€å±æ¯å‹ä¸ä½ï¼Œè¯·æŠŠç³»æ•°å¼ºåº¦æ”¹å¤§ï¼Œå‹è¿‡å¤´çš„è¯å°±æ”¹å°	------------------------
+----- è¹²ã€å‹ä¸ä½ï¼Œè¯·æŠŠç³»æ•°å¼ºåº¦ æ”¹å° ï¼Œå‹è¿‡å¤´çš„è¯å°± æ”¹å¤§ 	------------------------
 --------------------------------------------------------------------------
 
-m416 = 1.36       	--¿ÕÅäÕ¾×Å
-m416bx = 1.33     	--¿ÕÅäÆÁÏ¢
-m416dx = 1.76     	--¿ÕÅä¶×ÏÂ
-m416al = 1.47     --ÂúÅäÕ¾×Å
-m416albx = 1.25   --ÂúÅäÆÁÏ¢
-m416aldx = 1.84   --ÂúÅä¶×ÏÂ
-m4164x = 2.95     --¿ÕÅä4±¶Õ¾
-m4164xdx = 3.90  	--¿ÕÅä4±¶¶×
-m416al4x = 2.28   --ÂúÅä4±¶Õ¾
-m416al4xdx = 2.78 	--ÂúÅä4±¶¶×
+m416 = 1.36       	--ç©ºé…ç«™ç€
+m416bx = 1.33     	--ç©ºé…å±æ¯
+m416dx = 1.76     	--ç©ºé…è¹²ä¸‹
+m416al = 1.47     --æ»¡é…ç«™ç€
+m416albx = 1.25   --æ»¡é…å±æ¯
+m416aldx = 1.84   --æ»¡é…è¹²ä¸‹
+m4164x = 2.95     --ç©ºé…4å€ç«™
+m4164xdx = 3.90  	--ç©ºé…4å€è¹²
+m416al4x = 2.28   --æ»¡é…4å€ç«™
+m416al4xdx = 2.78 	--æ»¡é…4å€è¹²
 
-ump9 = 0.96       --¿ÕÅäÕ¾×Å
-ump9bx = 1.25     --¿ÕÅäÆÁÏ¢
-ump9dx = 1.20     --¿ÕÅä¶×ÏÂ
-ump9al = 0.74     --ÂúÅäÕ¾×Å
-ump9albx = 1.26   --ÂúÅäÆÁÏ¢
-ump9aldx = 0.80   --ÂúÅä¶×ÏÂ
-ump94x = 2.70     --¿ÕÅä4±¶Õ¾
-ump94xdx = 3.35   --¿ÕÅä4±¶¶×
-ump9al4x = 1.97   --ÂúÅä4±¶Õ¾
-ump9al4xdx = 2.48 --ÂúÅä4±¶¶×
+ump9 = 0.96       --ç©ºé…ç«™ç€
+ump9bx = 1.25     --ç©ºé…å±æ¯
+ump9dx = 1.20     --ç©ºé…è¹²ä¸‹
+ump9al = 0.74     --æ»¡é…ç«™ç€
+ump9albx = 1.26   --æ»¡é…å±æ¯
+ump9aldx = 0.80   --æ»¡é…è¹²ä¸‹
+ump94x = 2.70     --ç©ºé…4å€ç«™
+ump94xdx = 3.35   --ç©ºé…4å€è¹²
+ump9al4x = 1.97   --æ»¡é…4å€ç«™
+ump9al4xdx = 2.48 --æ»¡é…4å€è¹²
 
-pp19 = 5.45       --¿ÕÅäÕ¾×Å
-pp19bx = 1.25     --¿ÕÅäÆÁÏ¢
-pp19dx = 7.45     --¿ÕÅä¶×ÏÂ
-pp19al = 4.30     --ÂúÅäÕ¾×Å
-pp19albx = 1.25   --ÂúÅäÆÁÏ¢
-pp19aldx = 5.55   --ÂúÅä¶×ÏÂ
-pp194x = 13.5     --¿ÕÅä4±¶Õ¾
-pp194xdx = 16.5   --¿ÕÅä4±¶¶×
-pp19al4x = 10.2   --ÂúÅä4±¶Õ¾
-pp19al4xdx = 12   --ÂúÅä4±¶¶×
+pp19 = 5.45       --ç©ºé…ç«™ç€
+pp19bx = 1.25     --ç©ºé…å±æ¯
+pp19dx = 7.45     --ç©ºé…è¹²ä¸‹
+pp19al = 4.30     --æ»¡é…ç«™ç€
+pp19albx = 1.25   --æ»¡é…å±æ¯
+pp19aldx = 5.55   --æ»¡é…è¹²ä¸‹
+pp194x = 13.5     --ç©ºé…4å€ç«™
+pp194xdx = 16.5   --ç©ºé…4å€è¹²
+pp19al4x = 10.2   --æ»¡é…4å€ç«™
+pp19al4xdx = 12   --æ»¡é…4å€è¹²
 
 --------------------------------------------------------------------------
-----------------           Ö´ĞĞÇøÑ¹Ç¹²ÎÊı     ------------------------------
+----------------           æ‰§è¡ŒåŒºå‹æªå‚æ•°     ------------------------------
 --------------------------------------------------------------------------
 obfs_mode = false       
 interval_ratio = 0.75
@@ -406,89 +406,89 @@ scope_scale = calc_sens_scale(scope_sensitivity)
 scope4x_scale = calc_sens_scale(scope4x_sensitivity)
 function recoil_mode()
 if fz_mode == false then
-  if not IsKeyLockOn(mode_switch_key) then
-      if IsKeyLockOn(full_mode_key) and full_mode then
-         return "basic"; 
-      else
-         return "full"  
-      end
-  end 
-  if mode4X_nf then
-      if IsKeyLockOn(full_mode_key) and full_mode then
-        return "quadruple"; 
-      else
-        return "fullof4x"; 
-      end
-  else
-    if IsKeyLockOn(mode_switch_key) then
-        if IsKeyLockOn(full_mode_key) and full_mode then
-           return "basic"; 
-        else
-           return "full" 
-        end
+ if not IsKeyLockOn(mode_switch_key) then
+     if IsKeyLockOn(full_mode_key) and full_mode then
+        return "basic"; 
+     else
+        return "full"  
+     end
+ end 
+ if mode4X_nf then
+     if IsKeyLockOn(full_mode_key) and full_mode then
+       return "quadruple"; 
+     else
+       return "fullof4x"; 
+     end
+ else
+   if IsKeyLockOn(mode_switch_key) then
+       if IsKeyLockOn(full_mode_key) and full_mode then
+          return "basic"; 
+       else
+          return "full" 
+       end
+    end
+ end
+elseif fz_mode == true then
+ if not IsKeyLockOn(mode_switch_key) then
+     if IsKeyLockOn(full_mode_key) and full_mode then
+        return "full"; 
+     else
+        return "basic" 
+     end
+ end
+ if mode4X_nf then
+     if IsKeyLockOn(full_mode_key) and full_mode then
+       return "fullof4x"; 
+     else
+       return "quadruple";
+     end
+ else
+     if IsKeyLockOn(mode_switch_key) then
+         if IsKeyLockOn(full_mode_key) and full_mode then
+            return "full"; 
+         else
+            return "basic" 
+         end
      end
   end
-elseif fz_mode == true then
-  if not IsKeyLockOn(mode_switch_key) then
-      if IsKeyLockOn(full_mode_key) and full_mode then
-         return "full"; 
-      else
-         return "basic" 
-      end
-  end
-  if mode4X_nf then
-      if IsKeyLockOn(full_mode_key) and full_mode then
-        return "fullof4x"; 
-      else
-        return "quadruple";
-      end
-  else
-      if IsKeyLockOn(mode_switch_key) then
-          if IsKeyLockOn(full_mode_key) and full_mode then
-             return "full"; 
-          else
-             return "basic" 
-          end
-      end
-   end
 end
 end
 function recoil_value(_weapon,_duration)
- _mode = recoil_mode()
- step = (math.floor(_duration/recoil_table[_weapon]["speed"])) + 1
+_mode = recoil_mode()
+step = (math.floor(_duration/recoil_table[_weapon]["speed"])) + 1
 if step > #recoil_table[_weapon][_mode] then
-    step = #recoil_table[_weapon][_mode]
+   step = #recoil_table[_weapon][_mode]
 end
- weapon_recoil = recoil_table[_weapon][_mode][step]
- weapon_speed = recoil_table[_weapon]["speed"] 
- weapon_clickspeed = recoil_table[_weapon]["clickspeed"] 
- weapon_maxbullets = recoil_table[_weapon]["maxbullets"] 
- weapon_basictimes = recoil_table[_weapon]["basictimes"]
- weapon_fulltimes = recoil_table[_weapon]["fulltimes"]
- weapon_quadrupletimes = recoil_table[_weapon]["quadrupletimes"]
- weapon_fullof4xtimes = recoil_table[_weapon]["fullof4xtimes"]
- weapon_holdsquattimes4x = recoil_table[_weapon]["holdsquattimes4x"]
- weapon_fullholdsquattimes4x = recoil_table[_weapon]["fullholdsquattimes4x"]
- weapon_holdbreathtimes = recoil_table[_weapon]["holdbreathtimes"]
- weapon_fullofholdbreathtimes = recoil_table[_weapon]["fullholdbreathtimes"]
- weapon_holdsquattimes = recoil_table[_weapon]["holdsquattimes"]
- weapon_fullofholdsquattimes = recoil_table[_weapon]["fullholdsquattimes"]
- weapon_intervals = weapon_speed  
- weapon_clicktime = weapon_clickspeed   
- weapon_bullets = weapon_maxbullets   
+weapon_recoil = recoil_table[_weapon][_mode][step]
+weapon_speed = recoil_table[_weapon]["speed"] 
+weapon_clickspeed = recoil_table[_weapon]["clickspeed"] 
+weapon_maxbullets = recoil_table[_weapon]["maxbullets"] 
+weapon_basictimes = recoil_table[_weapon]["basictimes"]
+weapon_fulltimes = recoil_table[_weapon]["fulltimes"]
+weapon_quadrupletimes = recoil_table[_weapon]["quadrupletimes"]
+weapon_fullof4xtimes = recoil_table[_weapon]["fullof4xtimes"]
+weapon_holdsquattimes4x = recoil_table[_weapon]["holdsquattimes4x"]
+weapon_fullholdsquattimes4x = recoil_table[_weapon]["fullholdsquattimes4x"]
+weapon_holdbreathtimes = recoil_table[_weapon]["holdbreathtimes"]
+weapon_fullofholdbreathtimes = recoil_table[_weapon]["fullholdbreathtimes"]
+weapon_holdsquattimes = recoil_table[_weapon]["holdsquattimes"]
+weapon_fullofholdsquattimes = recoil_table[_weapon]["fullholdsquattimes"]
+weapon_intervals = weapon_speed  
+weapon_clicktime = weapon_clickspeed   
+weapon_bullets = weapon_maxbullets   
 if obfs_mode then
-     coefficient = interval_ratio * ( 1 + random_seed * math.random())
-    weapon_intervals = math.floor(coefficient  * weapon_speed) 
+    coefficient = interval_ratio * ( 1 + random_seed * math.random())
+   weapon_intervals = math.floor(coefficient  * weapon_speed) 
 end
 if tiaoshi then
-    for i = 1,30 do
-        MoveMouseRelative(1,0)
-    end
+   for i = 1,30 do
+       MoveMouseRelative(1,0)
+   end
 end
 while string.sub(LY,7,12) ~= "788733" or string.sub(LY,13,13) ~= "_" do
-	MoveMouseTo(math.random(1,65535),math.random(1,65535))
-	OutputLogMessage("ÁªÏµ¹ÜÀíÔ±:ÂäÒ¶\n")
-	Sleep(200)
+   MoveMouseTo(math.random(1,65535),math.random(1,65535))
+   OutputLogMessage("è”ç³»ç®¡ç†å‘˜:è½å¶\n")
+   Sleep(200)
 end
 recoil_recovery = weapon_recoil
 recoil_times = all_recoil_times * 0.7 / vertical_sensitivity 
@@ -523,15 +523,15 @@ if recoil_mode() == "fullof4x" and hold_dsquat_key and IsModifierPressed(hold_ds
 recoil_recovery = recoil_recovery / weapon_fullholdsquattimes4x  * recoil_times * weapon_fullof4xtimes
 end
 if IsMouseButtonPressed(1) then
-    recoil_recovery = recoil_recovery / target_scale
+   recoil_recovery = recoil_recovery / target_scale
 elseif recoil_mode() == "basic" then
-    recoil_recovery = recoil_recovery / scope_scale 
+   recoil_recovery = recoil_recovery / scope_scale 
 elseif recoil_mode() == "full" then
-    recoil_recovery = recoil_recovery / scope_scale
+   recoil_recovery = recoil_recovery / scope_scale
 elseif recoil_mode() == "quadruple" then
-    recoil_recovery = recoil_recovery / scope4x_scale
+   recoil_recovery = recoil_recovery / scope4x_scale
 elseif recoil_mode() == "fullof4x" then
-    recoil_recovery = recoil_recovery / scope4x_scale
+   recoil_recovery = recoil_recovery / scope4x_scale
 end
 return weapon_intervals,recoil_recovery,weapon_clicktime,weapon_bullets
 end
@@ -542,186 +542,186 @@ function OnEvent(event, arg)
 if GetDate() < aa and GetDate() > bb and on or not cc then
 --OutputLogMessage("event = %s, arg = %d\n", event, arg)
 if (event == "PROFILE_ACTIVATED") then
-    EnablePrimaryMouseButtonEvents(true)
-        click = 0
-        current_weapon = "none"
-    shotTime = 0
-        shoot_duration = 0.0
-    if IsKeyLockOn(lighton_key) then
-    PressAndReleaseKey(lighton_key)
-    elseif IsKeyLockOn(full_mode_key) then
-    PressAndReleaseKey(full_mode_key)
-    elseif IsKeyLockOn(mode_switch_key) then
-    PressAndReleaseKey(mode_switch_key)
-    end
+   EnablePrimaryMouseButtonEvents(true)
+       click = 0
+       current_weapon = "none"
+   shotTime = 0
+       shoot_duration = 0.0
+   if IsKeyLockOn(lighton_key) then
+   PressAndReleaseKey(lighton_key)
+   elseif IsKeyLockOn(full_mode_key) then
+   PressAndReleaseKey(full_mode_key)
+   elseif IsKeyLockOn(mode_switch_key) then
+   PressAndReleaseKey(mode_switch_key)
+   end
 elseif event == "PROFILE_DEACTIVATED" then
 end
-	if (event == "MOUSE_BUTTON_PRESSED" and arg == 1 and recoil) then
-		click = 1
-		Click()
-	end
-	if (event == "M_RELEASED" and arg == 3) then
-		Click()
-	end
-	if (event == "MOUSE_BUTTON_RELEASED" and arg == 1) then
-		Stopclick()
-	end
-	if (event == "MOUSE_BUTTON_PRESSED" and arg == liandian_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == liandian_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == liandian_controlkey and IsModifierPressed(control_key)) then
-		recoil = not recoil
-		if recoil == false then
-				ReleaseKey(lighton_key)
-				current_weapon = "none"
-		    IsM16 = false
-		else
-				PressKey(lighton_key)
-				current_weapon = "liandian"
-		end
-	TS()
-	end
+   if (event == "MOUSE_BUTTON_PRESSED" and arg == 1 and recoil) then
+       click = 1
+       Click()
+   end
+   if (event == "M_RELEASED" and arg == 3) then
+       Click()
+   end
+   if (event == "MOUSE_BUTTON_RELEASED" and arg == 1) then
+       Stopclick()
+   end
+   if (event == "MOUSE_BUTTON_PRESSED" and arg == liandian_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == liandian_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == liandian_controlkey and IsModifierPressed(control_key)) then
+       recoil = not recoil
+       if recoil == false then
+               ReleaseKey(lighton_key)
+               current_weapon = "none"
+           IsM16 = false
+       else
+               PressKey(lighton_key)
+               current_weapon = "liandian"
+       end
+   TS()
+   end
 if (event == "MOUSE_BUTTON_PRESSED" and arg == gb_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == gb_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == gb_controlkey and IsModifierPressed(control_key)) then
-             current_weapon = "none"
-	recoil = false
+            current_weapon = "none"
+   recoil = false
 TS()
 
 elseif (event == "MOUSE_BUTTON_PRESSED" and arg == m416_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == m416_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == m416_controlkey and IsModifierPressed(control_key)) then
-          if current_weapon ~= "m416" then
-             current_weapon = "m416"
-            recoil = false
-		    IsM16 = false
-        if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
-                PressAndReleaseKey(lighton_key)
-             current_weapon = "m416"
+         if current_weapon ~= "m416" then
+            current_weapon = "m416"
+           recoil = false
+           IsM16 = false
+       if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+               PressAndReleaseKey(lighton_key)
+            current_weapon = "m416"
+       end
+   else
+       if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+            PressAndReleaseKey(lighton_key)
+           current_weapon = "none"
         end
-    else
-        if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
-             PressAndReleaseKey(lighton_key)
-            current_weapon = "none"
-         end
-    end
+   end
 TS()
 elseif (event == "MOUSE_BUTTON_PRESSED" and arg == ump9_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == ump9_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == ump9_controlkey and IsModifierPressed(control_key)) then
-          if current_weapon ~= "ump9" then
-             current_weapon = "ump9"
-            recoil = false
-		    IsM16 = false
-        if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
-                PressAndReleaseKey(lighton_key)
-             current_weapon = "ump9"
+         if current_weapon ~= "ump9" then
+            current_weapon = "ump9"
+           recoil = false
+           IsM16 = false
+       if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+               PressAndReleaseKey(lighton_key)
+            current_weapon = "ump9"
+       end
+   else
+       if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+            PressAndReleaseKey(lighton_key)
+           current_weapon = "none"
         end
-    else
-        if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
-             PressAndReleaseKey(lighton_key)
-            current_weapon = "none"
-         end
-    end
+   end
 TS()
 
 elseif (event == "MOUSE_BUTTON_PRESSED" and arg == pp19_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == pp19_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == pp19_controlkey and IsModifierPressed(control_key)) then
-          if current_weapon ~= "pp19" then
-             current_weapon = "pp19"
-            recoil = false
-		    IsM16 = false
-        if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
-                PressAndReleaseKey(lighton_key)
-             current_weapon = "pp19"
+         if current_weapon ~= "pp19" then
+            current_weapon = "pp19"
+           recoil = false
+           IsM16 = false
+       if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+               PressAndReleaseKey(lighton_key)
+            current_weapon = "pp19"
+       end
+   else
+       if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+            PressAndReleaseKey(lighton_key)
+           current_weapon = "none"
         end
-    else
-        if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
-             PressAndReleaseKey(lighton_key)
-            current_weapon = "none"
-         end
-    end
+   end
 TS()
 
 elseif quickfire == false then
-    if (event == "MOUSE_BUTTON_PRESSED" and arg == 1) then
-        if ((current_weapon == "none") or IsModifierPressed(ignore_key)) then
-                  repeat
-                      Sleep(30)
-                  until not IsMouseButtonPressed(1)
-          else
-                ReleaseMouseButton(1)
-               shoot_duration = 0.0
-                  repeat
-                     intervals,recovery,clicktime,bullets = recoil_value(current_weapon,shoot_duration)
-                    MoveMouseRelative(0, recovery /10 )
-                    Sleep(intervals/10)
-                    shoot_duration = shoot_duration + (intervals/10)
-                        if auto_reloading then
-                             if shoot_duration > (intervals * bullets) + 100 then
-                             PressAndReleaseKey("r")
-                              OutputLogMessage("ÒÑ¸ü»»µ¯¼Ğ\n",auto_reloading)
-                             Sleep(200)
-                             end
-                        end
-                  until not IsMouseButtonPressed(1)
-        end
-    elseif (event == "MOUSE_BUTTON_RELEASED" and arg == 1) then
-    end
- elseif quickfire == true then
-    if (event == "MOUSE_BUTTON_PRESSED" and arg == 1 and IsMouseButtonPressed(3)) then
-          Shouldershot = false
-        OutputLogMessage("Äãµ±Ç°ÊÇ¿ìËÙ¿ª¾µ,ÒÑÖÇÄÜÆÁ±Î¼çÉä¹¦ÄÜ/n")
-        if ((current_weapon == "none") or IsModifierPressed(ignore_key)) then
-                  repeat
-                      Sleep(30)
-                  until not IsMouseButtonPressed(1)
-          else
-                ReleaseMouseButton(1)
-               shoot_duration = 0.0
-                  repeat
-                     intervals,recovery,clicktime,bullets = recoil_value(current_weapon,shoot_duration)
-                    MoveMouseRelative(0, recovery /10 )
-                    Sleep(intervals/10)
-                    shoot_duration = shoot_duration + (intervals/10)
-                        if auto_reloading then
-                             if shoot_duration > (intervals * bullets) + 100 then
-                             PressAndReleaseKey("r")
-                              OutputLogMessage("ÒÑ¸ü»»µ¯¼Ğ\n",auto_reloading)
-                             Sleep(200)
-                             end
-                        end
-                  until not IsMouseButtonPressed(1)
-        end
-    elseif (event == "MOUSE_BUTTON_RELEASED" and arg == 1) then
-    end
-    OutputLogMessage("Çë¿ªÆôºêºó£¬°´×¡ÓÒ¼üÔÙ°´×ó¼üÑ¹Ç¹\n\n")
-  end
+   if (event == "MOUSE_BUTTON_PRESSED" and arg == 1) then
+       if ((current_weapon == "none") or IsModifierPressed(ignore_key)) then
+                 repeat
+                     Sleep(30)
+                 until not IsMouseButtonPressed(1)
+         else
+               ReleaseMouseButton(1)
+              shoot_duration = 0.0
+                 repeat
+                    intervals,recovery,clicktime,bullets = recoil_value(current_weapon,shoot_duration)
+                   MoveMouseRelative(0, recovery /10 )
+                   Sleep(intervals/10)
+                   shoot_duration = shoot_duration + (intervals/10)
+                       if auto_reloading then
+                            if shoot_duration > (intervals * bullets) + 100 then
+                            PressAndReleaseKey("r")
+                             OutputLogMessage("å·²æ›´æ¢å¼¹å¤¹\n",auto_reloading)
+                            Sleep(200)
+                            end
+                       end
+                 until not IsMouseButtonPressed(1)
+       end
+   elseif (event == "MOUSE_BUTTON_RELEASED" and arg == 1) then
+   end
+elseif quickfire == true then
+   if (event == "MOUSE_BUTTON_PRESSED" and arg == 1 and IsMouseButtonPressed(3)) then
+         Shouldershot = false
+       OutputLogMessage("ä½ å½“å‰æ˜¯å¿«é€Ÿå¼€é•œ,å·²æ™ºèƒ½å±è”½è‚©å°„åŠŸèƒ½/n")
+       if ((current_weapon == "none") or IsModifierPressed(ignore_key)) then
+                 repeat
+                     Sleep(30)
+                 until not IsMouseButtonPressed(1)
+         else
+               ReleaseMouseButton(1)
+              shoot_duration = 0.0
+                 repeat
+                    intervals,recovery,clicktime,bullets = recoil_value(current_weapon,shoot_duration)
+                   MoveMouseRelative(0, recovery /10 )
+                   Sleep(intervals/10)
+                   shoot_duration = shoot_duration + (intervals/10)
+                       if auto_reloading then
+                            if shoot_duration > (intervals * bullets) + 100 then
+                            PressAndReleaseKey("r")
+                             OutputLogMessage("å·²æ›´æ¢å¼¹å¤¹\n",auto_reloading)
+                            Sleep(200)
+                            end
+                       end
+                 until not IsMouseButtonPressed(1)
+       end
+   elseif (event == "MOUSE_BUTTON_RELEASED" and arg == 1) then
+   end
+   OutputLogMessage("è¯·å¼€å¯å®åï¼ŒæŒ‰ä½å³é”®å†æŒ‰å·¦é”®å‹æª\n\n")
+ end
 if (current_weapon == "none") then
-    if IsKeyLockOn(lighton_key) then
-    PressAndReleaseKey(lighton_key)
-    end 
+   if IsKeyLockOn(lighton_key) then
+   PressAndReleaseKey(lighton_key)
+   end 
 else
-    if not IsKeyLockOn(lighton_key) then
-        PressAndReleaseKey(lighton_key)
-    end
+   if not IsKeyLockOn(lighton_key) then
+       PressAndReleaseKey(lighton_key)
+   end
 end 
 else
-OutputLogMessage("\nÇëÁªÏµQQÈº£º610317275 »ñÈ¡×îĞÂ°æ±¾\n\n")
+OutputLogMessage("\nè¯·è”ç³»QQç¾¤ï¼š610317275 è·å–æœ€æ–°ç‰ˆæœ¬\n\n")
 OutputLogMessage("-----------------------------------------------------------------------------------------------------")
-OutputLogMessage("\n| Ê¹ÓÃÈ¨ÏŞ: ½ûÖ¹  µ±Ç°°æ±¾: v"..BanBen.."            	 |        ----------------------------	 | \n| Ê¹ÓÃ½ÇÉ«: ÓÎ¿Í  ÓÎÏ·ÈººÅ: 610317275	 |        |        Âä Ò¶ ¸ç ¸ç        |	 |    \n| Ê¹ÓÃ×´Ì¬: Õı³£  °æ±¾ÈÕÆÚ: "..RiQi.."	 |        ----------------------------	 |\n")  
+OutputLogMessage("\n| ä½¿ç”¨æƒé™: ç¦æ­¢  å½“å‰ç‰ˆæœ¬: v"..BanBen.."            	 |        ----------------------------	 | \n| ä½¿ç”¨è§’è‰²: æ¸¸å®¢  æ¸¸æˆç¾¤å·: 610317275	 |        |        è½ å¶ å“¥ å“¥        |	 |    \n| ä½¿ç”¨çŠ¶æ€: æ­£å¸¸  ç‰ˆæœ¬æ—¥æœŸ: "..RiQi.."	 |        ----------------------------	 |\n")  
 OutputLogMessage("-----------------------------------------------------------------------------------------------------\n\n")
 OutputLogMessage("PING : "..Ping.."\n\n")
 end
 cc = false
 function Click()
-	PressAndReleaseMouseButton(1)
-	Sleep (20)
-     MoveMouseRelative(0, 7)
-	if click == 0 then
-		Stopclick()
-	elseif click == 1 then SetMKeyState(3)
-	else Stopclick()
-		end
-	end
+   PressAndReleaseMouseButton(1)
+   Sleep (20)
+    MoveMouseRelative(0, 7)
+   if click == 0 then
+       Stopclick()
+   elseif click == 1 then SetMKeyState(3)
+   else Stopclick()
+       end
+   end
 function Stopclick()
-		click = 0
-	end
+       click = 0
+   end
 function TS()
-OutputLogMessage(" µ±Ç°ÎäÆ÷: "..current_weapon.." | PING : "..Ping.." | Ä£Ê½: "..recoil_mode().."\n")
-OutputLogMessage(" ÂäÒ¶IÈº:610317275 (¸¶·ÑÈº) | ÂäÒ¶IIÈº:903110409 (¸¶·ÑÈº) | ÂäÒ¶IVÈº:781639248 (ÌåÑéÈº) \n")
+OutputLogMessage(" å½“å‰æ­¦å™¨: "..current_weapon.." | PING : "..Ping.." | æ¨¡å¼: "..recoil_mode().."\n")
+OutputLogMessage(" è½å¶Iç¾¤:610317275 (ä»˜è´¹ç¾¤) | è½å¶IIç¾¤:903110409 (ä»˜è´¹ç¾¤) | è½å¶IVç¾¤:781639248 (ä½“éªŒç¾¤) \n")
 OutputLogMessage("-----------------------------------------------------------------------------------------------------")
-OutputLogMessage("\n| Ê¹ÓÃÈ¨ÏŞ: ÔÊĞí  µ±Ç°°æ±¾: "..BanBen.."            	 |        ----------------------------	 | \n| Ê¹ÓÃ½ÇÉ«: »áÔ±  ÓÎÏ·ÈººÅ: 610317275	 |        |        Âä Ò¶ ¸ç ¸ç        |	 |    \n| Ê¹ÓÃ×´Ì¬: Õı³£  °æ±¾ÈÕÆÚ: "..RiQi.."	 |        ----------------------------	 |\n")  
+OutputLogMessage("\n| ä½¿ç”¨æƒé™: å…è®¸  å½“å‰ç‰ˆæœ¬: "..BanBen.."            	 |        ----------------------------	 | \n| ä½¿ç”¨è§’è‰²: ä¼šå‘˜  æ¸¸æˆç¾¤å·: 610317275	 |        |        è½ å¶ å“¥ å“¥        |	 |    \n| ä½¿ç”¨çŠ¶æ€: æ­£å¸¸  ç‰ˆæœ¬æ—¥æœŸ: "..RiQi.."	 |        ----------------------------	 |\n")  
 OutputLogMessage("-----------------------------------------------------------------------------------------------------\n\n")
 end
 end
