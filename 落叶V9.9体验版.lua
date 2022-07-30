@@ -7,17 +7,19 @@
 QQqun1 = "QQ群:903110409" 		--{ QQ群验证，别修改，会导致电脑崩溃死机）
 QQqun2 = "QQ群:610317275" 		--{ QQ群验证，别修改，会导致电脑崩溃死机）
 
-GameFPS = "90"	BanBen = "9.9"   Sq = "9.99"   ZG = "1.01"  LY = "QQ:997788733_LuoYe" 
+GameFPS = "144"	BanBen = "9.9"   Sq = "9.99"   ZG = "1.01"  LY = "QQ:997788733_LuoYe" 
 
 --------------------------------------------------------------------------
 ----------------        罗技G系列鼠标侧键     ------------------------------
 --------------------------------------------------------------------------
 -- 如果你是G-HUB罗技驱动，不要乱改位置和侧键编号，会导致失灵
-   m416_cdk_luoye = 5
-   ump9_cdk_luoye = 7 
-   pp19_cdk_luoye = 9
-     gb_cdk_luoye = 6 -- 关闭所有压枪	 
-liandian2_liandian = 0 -- 支持M16、SKS、SLR、MINI连点功能（兼容模式，偶然会出现卡主，支持G-HUB使用，小幅度协助压枪）
+   m416_cdk_luoye     = 5
+   akm_cdk_luoye      = 8
+   m762_cdk_luoye     = 7
+   ump9_cdk_luoye     = nil
+   pp19_cdk_luoye     = nil
+   gb_cdk_luoye       = 4 -- 关闭所有压枪	 
+   liandian2_liandian = 6 -- 支持M16、SKS、SLR、MINI连点功能（兼容模式，偶然会出现卡主，支持G-HUB使用，小幅度协助压枪）
 --------------------------------------------------------------------------
 ----------------    第二组侧键（CTRL+鼠标侧键）------------------------------
 --------------------------------------------------------------------------
@@ -27,13 +29,13 @@ liandian2_liandian = 0 -- 支持M16、SKS、SLR、MINI连点功能（兼容模�
 -- 如果你不知道你当前的侧键,把CeJian 设置为 CeJian= true 后你再按一下你的鼠标侧键就可以看到当前的侧键编号是多少了，要记得后面关掉，免得到时候卡哦；
 CeJian = false
 -- 是否开启快速开镜，左键舔包不下压（压枪方式:先按住鼠标右键再按左键）
-quickfire = false 
+quickfire = true
 -- 同一个侧键按第二次关闭宏
 drcgb = false		
 -- 满配模式开关啊(不需要满配模式就设置为 false )
 full_mode = true
 -- 四倍模式开关啊(不需要四倍模式就设置为 false )
-mode4X_nf = true
+mode4X_nf = false
 -- 屏息模式开关啊(不需要屏息模式就设置为 false )
 hold_breath_mode = true
 -- 自动换蛋（连续打完40发子弹自动换子弹的）
@@ -50,7 +52,7 @@ hold_breath_key = "lshift"
 -- 蹲下时要按住左下角键盘的 Ctrl 键盘
 hold_dsquat_key = "lctrl"
 -- 肩射功能开关(按住鼠标右键可将四倍模式临时切换成红点模式)
-Shouldershot = true		
+Shouldershot = false		
 -- 空配模式与满配模式开启灯光反转（false =  灯亮空配  改为 true = 灯亮为满配）
 fz_mode = false
 --------------------------------------------------------------------------
@@ -86,6 +88,28 @@ m4164x = 2.95     --空配4倍站
 m4164xdx = 3.90  	--空配4倍蹲
 m416al4x = 2.28   --满配4倍站
 m416al4xdx = 2.78 	--满配4倍蹲
+
+akm = 1.36       	--空配站着
+akmbx = 1.33     	--空配屏息
+akmdx = 1.76     	--空配蹲下
+akmal = 1.47     --满配站着
+akmalbx = 1.25   --满配屏息
+akmaldx = 1.84   --满配蹲下
+akm4x = 2.95     --空配4倍站
+akm4xdx = 3.90  	--空配4倍蹲
+akmal4x = 2.28   --满配4倍站
+akmal4xdx = 2.78 	--满配4倍蹲
+
+m762 = 1.36       	--空配站着
+m762bx = 1.33     	--空配屏息
+m762dx = 1.76     	--空配蹲下
+m762al = 1.47     --满配站着
+m762albx = 1.25   --满配屏息
+m762aldx = 1.84   --满配蹲下
+m7624x = 2.95     --空配4倍站
+m7624xdx = 3.90  	--空配4倍蹲
+m762al4x = 2.28   --满配4倍站
+m762al4xdx = 2.78 	--满配4倍蹲
 
 ump9 = 0.96       --空配站着
 ump9bx = 1.25     --空配屏息
@@ -124,7 +148,7 @@ move = 40
 RiQi = 20200206
 if Sq == "9.99" then
 aa = "Sun Feb  2 23:59:59 2020"
-bb = "Sun Feb  2 00:59:59 2020"
+bb = "Sun Feb  2 00:59:59 2030"
 end
 if Ping == "1920" then
 all_recoil_times = 1.00 * lx1920
@@ -599,6 +623,41 @@ elseif (event == "MOUSE_BUTTON_PRESSED" and arg == m416_cdk_luoye and not IsModi
         end
    end
 TS()
+
+elseif (event == "MOUSE_BUTTON_PRESSED" and arg == akm_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == akm_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == akm_controlkey and IsModifierPressed(control_key)) then
+   if current_weapon ~= "akm" then
+      current_weapon = "akm"
+     recoil = false
+     IsM16 = false
+ if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+         PressAndReleaseKey(lighton_key)
+      current_weapon = "akm"
+ end
+else
+ if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+      PressAndReleaseKey(lighton_key)
+     current_weapon = "none"
+  end
+end
+TS()
+
+elseif (event == "MOUSE_BUTTON_PRESSED" and arg == m762_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == m762_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == m762_controlkey and IsModifierPressed(control_key)) then
+   if current_weapon ~= "m762" then
+      current_weapon = "m762"
+     recoil = false
+     IsM16 = false
+ if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+         PressAndReleaseKey(lighton_key)
+      current_weapon = "m762"
+ end
+else
+ if IsKeyLockOn(lighton_key) and drcgb and current_weapon  then
+      PressAndReleaseKey(lighton_key)
+     current_weapon = "none"
+  end
+end
+TS()
+
 elseif (event == "MOUSE_BUTTON_PRESSED" and arg == ump9_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == ump9_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == ump9_controlkey and IsModifierPressed(control_key)) then
          if current_weapon ~= "ump9" then
             current_weapon = "ump9"
