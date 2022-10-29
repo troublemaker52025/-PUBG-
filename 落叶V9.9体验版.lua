@@ -19,7 +19,7 @@ GameFPS = "144"	BanBen = "9.9"   Sq = "9.99"   ZG = "1.01"  LY = "QQ:997788733_L
    ump9_cdk_luoye     = nil
    pp19_cdk_luoye     = nil
    gb_cdk_luoye       = 4 -- 关闭所有压枪	 
-   liandian2_liandian = 6 -- 支持M16、SKS、SLR、MINI连点功能（兼容模式，偶然会出现卡主，支持G-HUB使用，小幅度协助压枪）
+   liandian_cdk_luoye = 6 -- 支持M16、SKS、SLR、MINI连点功能（兼容模式，偶然会出现卡主，支持G-HUB使用，小幅度协助压枪）
 --------------------------------------------------------------------------
 ----------------    第二组侧键（CTRL+鼠标侧键）------------------------------
 --------------------------------------------------------------------------
@@ -592,7 +592,7 @@ end
    end
    if (event == "MOUSE_BUTTON_PRESSED" and arg == liandian_cdk_luoye and not IsModifierPressed(control_key)) or (event == "G_PRESSED" and arg == liandian_gcdk_luoye) or (event == "MOUSE_BUTTON_PRESSED" and arg == liandian_controlkey and IsModifierPressed(control_key)) then
        recoil = not recoil
-       if recoil == false then
+       if recoil == false and drcgb then
                ReleaseKey(lighton_key)
                current_weapon = "none"
            IsM16 = false
