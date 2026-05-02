@@ -64,7 +64,7 @@ function RecoilControl()
     local weapon = Recoil_table[current_weapon]
     if weapon == nil then return end
 
-    -- 计算射速间隔
+    -- 计算射速间隔(毫秒)
     local sleep_time = 60000 / weapon.RateOfFire
 
     -- 条件3：弹道数量以最多的为主 (X和Y数组长度取最大值)
@@ -73,8 +73,12 @@ function RecoilControl()
     local max_trajectory_len = math.max(len_x, len_y)
     
     -- 实际最大开火数 = min(最大弹道长度, 设定的 max_bullets)
-    -- 这样既不会超过表的数据上限，也不会超过你设定的 max_bullets 上限
     local actual_max_bullets = math.min(max_trajectory_len, weapon.max_bullets)
+
+    -- 【新增】平滑步进间隔(毫秒) 
+    -- G Hub的Sleep精度大约在2~10ms，建议设为3~5之间。
+    -- 设为4表示：将每一发的移动切分为每4毫秒移动一小步，既不卡顿也不超算力
+    local smooth_interval = 4 
 
     local bullet_index = 1
 
@@ -89,8 +93,6 @@ function RecoilControl()
         -- 达到实际最大开火数，退出循环
         if bullet_index > actual_max_bullets then break end
 
-        -- 条件4：保护判断，如果当前序号超过对应数组的长度，则取数组最后一个值
-        -- math.min(bullet_index, len_x) 保证了当 bullet_index > len_x 时，只会读取 len_x (即最后一条数据)
         local idx_x = math.min(bullet_index, len_x)
         local idx_y = math.min(bullet_index, len_y)
 
@@ -98,11 +100,50 @@ function RecoilControl()
         local move_x = weapon.Trajectory_x[idx_x] * YQXS_X
         local move_y = weapon.Trajectory_y[idx_y] * YQXS_Y
 
-        -- 执行鼠标移动
-        MoveMouseRelative(move_x, move_y)
+        -- 【新增】计算该发子弹需要切分成多少步移动
+        local steps = math.floor(sleep_time / smooth_interval)
+        if steps < 1 then steps = 1 end
 
-        -- 等待下一发子弹
-        Sleep(sleep_time)
+        -- 每步理论移动量(浮点数)
+        local step_x = move_x / steps
+        local step_y = move_y / steps
+
+        -- 【新增】累计误差平滑法
+        -- 利用浮点数累加，解决像素不能切分导致总偏移量不守恒的问题
+        local acc_x = 0
+        local acc_y = 0
+
+        for i = 1, steps do
+            -- 【关键优化】实时检测按键状态，如果中途松开鼠标或右键，立即停止，防止松手后鼠标继续往下拉
+            if not IsMouseButtonPressed(1) then return end
+            if Enable_mode == 2 and not IsMouseButtonPressed(3) then return end
+            if is_off then return end
+
+            acc_x = acc_x + step_x
+            acc_y = acc_y + step_y
+
+            -- 四舍五入取整，确保总位移最接近理论值
+            local dx = math.floor(acc_x + 0.5)
+            local dy = math.floor(acc_y + 0.5)
+
+            -- 只有当实际需要移动时才调用鼠标移动指令，节省算力
+            if dx ~= 0 or dy ~= 0 then
+                MoveMouseRelative(dx, dy)
+                -- 减去已经移动的量，保留微小误差进入下一次循环累加
+                acc_x = acc_x - dx
+                acc_y = acc_y - dy
+            end
+
+            Sleep(smooth_interval)
+        end
+
+        -- 【新增】步长时间补偿
+        -- 因为 steps * smooth_interval 可能会略小于实际的射速 sleep_time
+        -- 补足剩余的时间，确保压枪节奏不被加快
+        local elapsed = steps * smooth_interval
+        if elapsed < sleep_time then
+            Sleep(sleep_time - elapsed)
+        end
 
         bullet_index = bullet_index + 1
     end
