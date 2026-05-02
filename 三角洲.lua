@@ -7,9 +7,24 @@ ScreenX = 2560
 ScreenY = 1440
 MouseDPI = 900  -- 鼠标当前 DPI，900 DPI 下偏移量感受偏大，可通过 YQXS_Y 微调
 
------ 功能控制键(G Hub 键位，例如 G4 填 4，G6 填 6) --------
-offkey = 6      -- 关闭压枪键
-AKM = 4         -- AKM 枪械开关
+----- 功能控制键(G Hub 键位，请参考下表进行配置) --------
+GHUB_KEY_MAPPINGS = {
+    ["G1"] = 1,    -- G1 鼠标左键
+    ["G2"] = 2,    -- G2 鼠标右键
+    ["G3"] = 3,    -- G3 鼠标中键
+    ["G4"] = 4,    -- G4 侧键
+    ["G5"] = 6,    -- G5 侧键
+    ["G6"] = 5,    -- G6 侧键G
+    ["G7"] = 11,   -- G7 鼠标左键侧键
+    ["G8"] = 10,   -- G8 鼠标左键侧键
+    ["G9"] = 9,    -- G9 鼠标滚轮后键
+    ["G10"] = 7,   -- G10 滚轮左侧键
+    ["G11"] = 8    -- G11 滚轮右侧键
+}
+
+AKM = "G8"         -- AKM 枪械开关
+
+offkey = "G7"      -- 关闭压枪键
 
 ----- 压枪模式与微调 ---------
 Enable_mode = 2     -- 1: 左键直接压 ---- 2: 右键开镜后左键压枪
@@ -41,7 +56,7 @@ function RecoilControl()
 
     -- 计算射速间隔
     local sleep_time = 60000 / weapon.RateOfFire
-    
+
     -- 条件3：弹道数量以最多的为主 (X和Y数组长度取最大值)
     local len_x = #weapon.Trajectory_x
     local len_y = #weapon.Trajectory_y
@@ -87,32 +102,38 @@ end
 function OnEvent(event, arg, family)
     EnablePrimaryMouseButtonEvents(true)
 
-    if event == "G_PRESSED" then
-        if arg == AKM then
+    if event == "PROFILE_ACTIVATED" then
+        OutputLogMessage("Profile activated | family=%s | arg=%d\n", tostring(family), arg)
+    end
+
+    -- 监听按键并根据按键设置当前武器或关闭压枪
+    if event == "MOUSE_BUTTON_PRESSED" then
+        OutputLogMessage("LMB pressed | family=%s | arg=%d\n", tostring(family), arg)
+        if arg == GHUB_KEY_MAPPINGS[AKM] then
             current_weapon = "AKM"
-            OutputLogMessage("Weapon: AKM | DPI: %d\n", MouseDPI)
-        elseif arg == offkey then
+            is_off = false
+            OutputLogMessage("Weapon: AKM | Recoil: %s\n", is_off and "OFF" or "ON")
+        elseif arg == GHUB_KEY_MAPPINGS[offkey] then
             is_off = true
             OutputLogMessage("Recoil OFF\n")
         end
     end
 
-    if event == "G_RELEASED" then
-        if arg == offkey then
-            is_off = false
-            OutputLogMessage("Recoil ON\n")
-        end
-    end
+    if event == "MOUSE_BUTTON_PRESSED" and arg == GHUB_KEY_MAPPINGS["G1"] then
+        OutputLogMessage("LMB pressed | family=%s | mode=%d\n", tostring(family), Enable_mode)
 
-    if family == "mouse" then
-        if event == "MOUSE_BUTTON_PRESSED" and arg == 1 then
-            if Enable_mode == 1 then
+        if Enable_mode == 1 then
+            RecoilControl()
+            OutputLogMessage("Mode1 RecoilControl()\n")
+        elseif Enable_mode == 2 then
+            if IsMouseButtonPressed(3) then
                 RecoilControl()
-            elseif Enable_mode == 2 then
-                if IsMouseButtonPressed(3) then
-                    RecoilControl()
-                end
+                OutputLogMessage("Mode2 RecoilControl()\n")
+            else
+                OutputLogMessage("Mode2 waiting for RMB\n")
             end
+        else
+            OutputLogMessage("Invalid mode: %d\n", Enable_mode)
         end
     end
 end
